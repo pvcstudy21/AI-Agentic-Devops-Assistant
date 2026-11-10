@@ -1,0 +1,12 @@
+2026-11-10 09:00:00 INFO Starting TaskFlow API
+2026-11-10 09:00:02 INFO PostgreSQL connection established
+2026-11-10 09:00:03 INFO Redis connection established
+2026-11-10 09:05:00 INFO GET /health 200
+2026-11-10 09:10:00 INFO GET /tasks 200
+2026-11-10 09:15:00 WARNING Database query took 4.8 seconds
+2026-11-10 09:16:00 ERROR Database connection timeout
+2026-11-10 09:16:02 ERROR GET /tasks 500
+2026-11-10 09:16:05 ERROR Database connection pool exhausted
+2026-11-10 09:17:00 WARNING Retrying database connection
+2026-11-10 09:18:00 INFO Database connection restored
+2026-11-10 09:20:00 INFO GET /health 200

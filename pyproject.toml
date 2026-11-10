@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-devops-assistant"
+version = "0.1.0"
+description = "A local-first, tool-using DevOps assistant built with LangChain and LangGraph."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Project contributors" }]
+dependencies = [
+    "langchain>=1.0,<2.0",
+    "langgraph>=1.0,<2.0",
+    "langchain-ollama>=1.0,<2.0",
+    "fastapi>=0.115,<1.0",
+    "uvicorn[standard]>=0.30,<1.0",
+    "python-dotenv>=1.0,<2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0,<10.0",
+    "httpx>=0.27,<1.0",
+]
+
+[project.scripts]
+devops-assistant = "devops_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"

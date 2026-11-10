@@ -1,0 +1,5 @@
+2026-11-10 09:00:00 INFO Redis server started
+2026-11-10 09:05:00 INFO Connected clients: 5
+2026-11-10 09:10:00 INFO Memory usage: 80 MB
+2026-11-10 09:15:00 WARNING Memory usage: 450 MB
+2026-11-10 09:20:00 INFO Memory usage: 110 MB

@@ -1,0 +1,16 @@
+{
+  "api": {
+    "type": "http",
+    "url": "http://127.0.0.1:8000/health"
+  },
+  "postgres": {
+    "type": "tcp",
+    "host": "127.0.0.1",
+    "port": 5432
+  },
+  "redis": {
+    "type": "tcp",
+    "host": "127.0.0.1",
+    "port": 6379
+  }
+}
